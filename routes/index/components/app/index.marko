@@ -1,0 +1,18 @@
+class {
+    constructor() {
+        this.state = {
+            mounted: false
+        };
+    }
+    onMount() {
+        this.state.mounted = true;
+    }
+}
+
+<div>
+    <p if(state.mounted)>
+        UI component successfully mounted!
+    </p>
+
+    <click-count/>
+</div>
